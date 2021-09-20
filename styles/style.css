@@ -2,4 +2,66 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
+@font-face {
+    font-family: 'Gotham Rounded';
+    src:url('../fonts/GothamRounded-Light.otf') format('otf');
+    font-style: thin;
+    src:url('../fonts/GothamRoundedBook_21018.ttf') format("ttf");
+    font-style: normal;
+  }
 
+*, html{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    /*Achtergrond kleur variabele aanmaken*/ 
+    --achtergrond: #ffce00;
+}
+
+body {
+   background-color: var(--achtergrond);
+   display: block;
+   margin: 8px; 
+   font-family: "Gotham Rounded SSm",Arial,sans-serif;
+   font-size: 1rem;
+   line-height: 1.375;
+   font-weight: lighter;
+   -webkit-font-smoothing: antialiased;
+   width: 375px;
+   height: 812px;
+   letter-spacing: .05em;
+}
+
+header {
+    height: 175px;
+    width: 375px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: calc(50% - 159.5px);
+    width: 319px;
+    font-family: "Gotham Rounded";
+}
+
+h1 {
+    font-size: 1.75em;
+    line-height: 1.143;
+}
+
+p {
+
+}
+
+.logo {
+    position: absolute;
+    height: 82px;
+    width: 82x;
+}
