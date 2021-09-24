@@ -1,13 +1,7 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
 @font-face {
     font-family: 'Gotham Rounded';
     src:url('../fonts/GothamRounded-Light.otf') format('otf');
-    font-style: thin;
     src:url('../fonts/GothamRoundedBook_21018.ttf') format("ttf");
-    font-style: normal;
   }
 
 *, html{
@@ -22,46 +16,193 @@
 }
 
 body {
-   background-color: var(--achtergrond);
-   display: block;
-   margin: 8px; 
-   font-family: "Gotham Rounded SSm",Arial,sans-serif;
-   font-size: 1rem;
-   line-height: 1.375;
-   font-weight: lighter;
-   -webkit-font-smoothing: antialiased;
-   width: 375px;
-   height: 812px;
-   letter-spacing: .05em;
+    display: block;
+    background-color: var(--achtergrond);
+    font-family: "Gotham Rounded",Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.375;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .05em;
 }
 
-header {
-    height: 175px;
-    width: 375px;
-    display: flex;
-    justify-content: flex-end;
+main {
+    position: relative;
+    top: 183px;
+    left: 28px;
+    right: 30px;
+    height: 2500px;
+}
+h1 {
+    font-size: 1.73em;
+    line-height: 1.143;
+    letter-spacing: 0.05em;
+}
+section > p{
+    font-size: 16px;
+    position: absolute;
+    top: 130px;
+    font-weight: 600; 
+}
+a {
+    text-decoration: none;
 }
 
-section {
+section:nth-of-type(3){
+    position: absolute;
+    top: 340px;
+
+}
+
+main ul li {
+    width: 319px;
+    height: 438px;
+    z-index: 2;
+    list-style: none;
+    margin:0 40px 40px 0; 
+    vertical-align: top;
+    border-radius: 15px;
+    color: white;
+    overflow: hidden;
+} 
+main ul li a {
+    color: white;
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 20px;
+}
+main ul li a::before {
+    content: '';
     position: absolute;
-    right: calc(50% - 159.5px);
-    width: 319px;
-    font-family: "Gotham Rounded";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0,);
+    z-index: 0;
+
+}
+main ul li a * {
+    z-index: 1;
+}
+main ul > li > a > h1  {
+    font-size: 14px;
+    width: 300px;
+    margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 1.75em;
-    line-height: 1.143;
+main ul > li > a > h2 {
+    font-size: 24px;
+    width: 300px;
+    margin-bottom: 10px;
 }
 
-p {
+main ul > li > a > h3 {
+    font-size: 14px;
+    width: 300px;
+    margin-bottom: 10px;
+}
 
+main ul > li > a > p {
+    font-size: 14px;
+    width: 300px;
+    font-weight: 600; 
+    margin-bottom: 10px;
+}
+
+main ul > li > a > h3::after {
+    content: "âž";
+}
+
+main li:nth-of-type(1){
+    background-image: url("/images/zonnebloemen.webp");
+    background-size: cover;
+}
+main li:nth-of-type(2){
+    background-image: url("/images/zieligeman.webp");
+    background-size: cover;
+}
+main li:nth-of-type(3){
+    background-image: url("/images/robertleegte.webp");
+    background-size: cover;
+}
+main li:nth-of-type(4){
+    background-image: url("/images/zelfportret.jpeg");
+    background-size: cover;
+}
+
+.icoon1 {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 31px;
+    left: 28px;
+}
+.icoon2 {
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    top: 32px;
+    left: 88px;
 }
 
 .logo {
     position: absolute;
-    height: 82px;
-    width: 82x;
+    right: 30px;
+    top: 30px;
+    width: 80px;
+    height: auto;
+}
+
+.pijl1 {
+    height: 20px;
+    width: auto;
+    position: absolute;
+    top: 210px;
+}
+
+.pijl2 {
+    height: 20px;
+    width: auto;
+    position: absolute;
+    top: 250px;
+}
+#link1tekst {
+    position: absolute;
+    left: 35px;
+    width: 150px;
+    top: 210px;
+    color: black;
+    font-weight: 900; 
+}
+#link2tekst {
+    position: absolute;
+    left: 35px;
+    width: 100%;
+    top: 250px;
+    color: black;
+    font-weight: 900; 
+}
+footer {
+    position: relative;
+    left: 30px;
+    width: 330px;
+    font-size: 14px;
+}
+
+footer ul {
+    position: relative;
+    top: 30px;
+    list-style: none;
+    font-weight: 800;
+}
+footer ul li {
+    margin:0 30px 30px 0; 
+    vertical-align: top;
+}
+footer li::before {
+    content: "âž";
 }
