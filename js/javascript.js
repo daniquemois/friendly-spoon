@@ -1,25 +1,25 @@
 console.log("werkt ie?");
 
-var menuBarElement = document.getElementById("menuicoon");
+var menuButton = document.getElementById("menuicoon");
+var kruisButton = document.getElementById("kruisicoon");
+var deHeader = document.querySelector("header");
 
-var kruisBarElement = document.getElementById("kruisicoon");
+menuButton.addEventListener("click", toggleMenu);
+kruisButton.addEventListener("click", toggleMenu);
 
-var hiddenMenuElement = document.getElementById("hiddenmenu");
-
-var menuBarButton = document.getElementById("menuicoon");
-
-function functieMenu() {
-    menuBarElement.style.visibility = "hidden";
-    kruisBarElement.style.visibility = "visible";
-    hiddenMenuElement.style.visibility = "visible";
+function toggleMenu() {
+    deHeader.classList.toggle("toonMenu");
 }
 
-menuBarElement.addEventListener("click", functieMenu);
 
-function functieKruis() {
-    menuBarElement.style.visibility = "visible";
-    kruisBarElement.style.visibility = "hidden";
-    hiddenMenuElement.style.visibility = "hidden";
-}
-
-kruisBarElement.addEventListener("click", functieKruis);
+// $(document).ready(function(){       
+//     var scroll_pos = 0;
+//     $(document).scroll(function() {
+//         scroll_pos = $(this).scrollTop();
+//         if(scroll_pos > 300) {
+//             $("body").css('background-color', "var(--overlooppaars)");
+//         } else {
+//             $("body").css('background-color', 'var(--overloopgroen)');
+//         }
+//     });
+// });

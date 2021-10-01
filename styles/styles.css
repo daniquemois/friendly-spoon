@@ -9,7 +9,6 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    width: 100%;
 }
 
 :root {
@@ -24,84 +23,112 @@
 body {
     background-color: var(--achtergrond);
     font-family: "Gotham rounded";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-right: 30px;
 }
-header {
-    display: flex;
-    z-index: 0;
+/*header semantisch*/
+header{
+    margin-top: 30px;
+    display:flex;
 }
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-main section{
-    margin: 30px;
-}
-h1 {
-    font-size: 29px;
-    font-weight: 900;
-    width: 300px;
-    color: var(--tekstcolor);
-}
-/*Specifiekere header styling*/
-header section:nth-child(1){
-    display: flex;
-    margin: 30px;
-    gap: 40px;
-}
-header h2 {
-    font-size: 28px;
-    margin: 0 20px 20px 0;
-}
-header section div p{
-    position: absolute;
-    top: -100px;
-    left: 200px;
-}
-header section div p::after{
-    content: "∇";
-}
-#hiddenmenu{
-    position: fixed;
-    z-index: 4;
-    width: 100%;
-    height: 100%;
+
+header > a:first-of-type {
+    order:1;
+    margin-left:auto;
+} 
+header nav {
+    position:fixed;
+    top:0; bottom:0;
+    left:0; right:0;
+
+    background-color: var(--achtergrond);
+    transform: translatex(-100%);
+    transition: .3s;
     display: flex;
     flex-direction: column;
-    background-color: var(--achtergrond);
-    align-items: center;
-    visibility: hidden;
 }
-.container{
-    position: absolute;
-    width: 300px;
-    top: 130px;
+header.toonMenu nav {
+    transform: translatex(0%);
+}
+header nav h2 {
+    margin-left: 1em;
+    font-size: 28px;
+    margin-top: 2em;
+}
+header nav ul {
+    transform: translatex(-50%);
+    transition: .3s .3s;
+    opacity:0;
+    list-style: none;
+    margin:2em;
+    width:calc(100% - 4em);
+}
+header nav ul::before,
+header nav ul::after {
+    content:"";
+    display:block;
+    height:3px;
+    background-color:black;
+    border-radius:1px;
+}
+header.toonMenu nav ul {
+    transform: translatex(0%);
+    opacity:1;
+}
+header nav ul li {
+    margin: 0 1em 1em 0;
+    font-size: 24px;
+}
+header nav ul li:first-of-type {
+    margin-top: 1em;
+}
+/*header ids*/
+#kruisicoon {
+    width: 20px;
+    height: 20px;
+    margin: 30px;  
 }
 #menuicoon {
-    height: 22px;
-    width: 22px;
-    z-index: 5;
+    width: 20px;
+    height: 20px;
+    order: -1;
+    margin-left: 30px;
 }
-#kruisicoon {
-    position: absolute;
-    height: 22px;
+#zoekicoon {
     width: 22px;
-    z-index: 5;
-    left: 28px;
-    top: 28px;
-    visibility: hidden;
-}
-#searchicoon {
-    height: 22px;
-    width: 22px;
-    z-index: 5;
+    height: 20px;
+    margin-left: 2em;
 }
 #logoicoon {
+    width: 80px;
     height: 80px;
-    width: 80px; 
-    margin: 30px;
+
 }
-/*Specifiekere main styling*/
+/*Main en footer*/
+.scrollbaar {
+    margin-left: 2em;
+    width: calc(100% - 2em);
+}
+/*Main*/
+h1 {
+    font-size: 28px;
+    margin-top: 2.5em;
+}
+main p:first-of-type {
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 1em;
+}
+a {
+    text-decoration: none;
+    color: var(--textcolor);
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-weight: 900;
+}
 h3 {
     color: var(--tekstblokcolor);
     position: relative;
@@ -115,20 +142,6 @@ main h2 {
     z-index: 2;
     margin-bottom: 10px;
 }
-main > section > ul > li > a > p {
-    color: var(--tekstblokcolor);
-    margin-bottom: 10px;
-}
-ul {
-    list-style: none;
-    font-size: 24px;
-    font-family: "Gotham rounded";
-}
-ul li {
-    margin: 0 20px 20px 0;
-    display: flex;
-    align-items: flex-end;
-}
 #linkpijl::before {
     content: "➝";
 }
@@ -141,65 +154,46 @@ h4{
     z-index: 2;
     font-size: 16px;
 }
-main section ul li a{
-    margin: 10px;
-}
-p {
-    font-size: 18px;
-    font-weight: 900px;
-    color: var(--tekstcolor);
-    position: relative;
-    z-index: 2;
-
-}
-a {
-    color: var(--tekstcolor);
-    text-decoration: none;
-    padding-left: 10px
-}
-main section {
-    position: relative;
-    gap: 60px;
+main section ul {
+    margin-top: 2em;
+    overflow: hidden;
 }
 main section ul li {
-    position: relative;
-    width: 319px;
-    height: 438px;
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
     z-index: 2;
-    list-style: none;
-    margin:0 40px 40px 0; 
+    list-style: none; 
     vertical-align: top;
     border-radius: 15px;
-    color: white;
+    color: var(--tekstblokcolor);
     overflow: hidden;
-} 
-main section ul li a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 20%;
-    background-color: black;
-    z-index: 1;
+    margin: 0 40px 40px 0;
+    display: flex;
+    align-items: flex-end;
 }
 main li:nth-of-type(1){
-    background-image: url("../images/zonnebloemen.webp");
+    background-image: url("../images/zonnebloemen.png");
     background-size: cover;
 }
 main li:nth-of-type(2){
-    background-image: url("../images/zieligeman.webp");
+    background-image: url("../images/zieligeman.png");
     background-size: cover;
 }
 main li:nth-of-type(3){
-    background-image: url("../images/robertleegte.webp");
+    background-image: url("../images/robertleegte.png");
     background-size: cover;
 }
 main li:nth-of-type(4){
     background-image: url("../images/zelfportret.jpeg");
     background-size: cover;
+    margin-bottom: 4em;
 }
-
-
-
+/*footer*/
+footer section {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+@media only screen and (min-width: 620px){
+    /
+    
+}
