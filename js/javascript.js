@@ -1,15 +1,21 @@
 console.log("werkt ie?");
 
-var menuButton = document.getElementById("menuicoon");
-var kruisButton = document.getElementById("kruisicoon");
+var navButton = document.getElementById("navicoon");
 var deHeader = document.querySelector("header");
 
-menuButton.addEventListener("click", toggleMenu);
-kruisButton.addEventListener("click", toggleMenu);
+navButton.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
     deHeader.classList.toggle("toonMenu");
+    if(navicoon.getAttribute("src") == "images/menuicon.png"){
+        navicoon.src = "images/crossicon.png";
+    }
+    else if (navicoon.getAttribute("src") == "images/crossicon.png"){
+        navicoon.src = "images/menuicon.png";
+    }
 }
+
+
 
 
 // $(document).ready(function(){       
