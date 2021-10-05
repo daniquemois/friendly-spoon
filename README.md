@@ -193,6 +193,10 @@ Ik vind zelf dat ik het redelijk goed heb gedaan, als ik er meer tijd voor had g
 
 hier screenshot(s) van je eindresultaat
 
+<img src="images/mijnwebsite1.png" alt="mijn website pagina 1" width="375px">
+
+<img src="images/mijnwebsite2.png" alt="mijn website pagina 2" width="375px">
+
 </details>
 
 
