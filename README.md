@@ -44,7 +44,7 @@ Homepage
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Menu 
-<img src="images/website2.png" width="375px" alt="menu">
+<img src="images/website2.png" width="375px" alt="kennis en onderzoek pagina">
  
 </details>
 
@@ -58,13 +58,12 @@ Menu
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/breakdown2.png" width="375px" alt="breakdown van de web versie">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
 </details>
 
@@ -78,26 +77,21 @@ Menu
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik begon best wel goed, en was erg enthousiast. De website die ik heb gekozen leek mij erg leuk om te doen, omdat hij erg simpel lijkt. Dit viel uiteindelijk toch wel tegen.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| student 1      |
+| ---            |
+|responsive maken|
+| hoe ik de fotos|
+| het beste kan aanpakken           |
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Ik was als enige bij de feedback ronde, dus had genoeg tijd om mijn eigen vragen te stellen. Ik heb wel contact gehad met mijn groep maatje, maar hij had het druk.
 
 </details>
 
@@ -111,26 +105,21 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Door een tekort aan tijd wegens een ander vak had ik niet heel veel vorderingen sinds vorige week, maar ik liep wel al tegen wat punten aan. Ik wil een responsive website, en de display flex werkt niet mee. 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| student 1      | student 2          | 
+| ---            | ---                | 
+| display flex   | responsive         | 
+| van de images  |                    | 
+| ...            | ...                | 
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Mijn groepmaatje kwam pas na een kwartier in de feedback sessie, dus ik had al mijn vragen al behandelt toen hij aankwam. Deze keer had ik een gesprek met de studentassistenten en hun konden mij goed helpen met mijn vragen. Mijn display flex werkt nu eindelijk wel en dit is een grote stap in mijn website. Hij lijkt al bijna op de echte versie.
 
 </details>
 
@@ -144,30 +133,19 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+- De taal van mijn website stond op engels dus hij las alles in het engels voor.
+- Ik heb de a states nog niet gedaan in css.
 
 #### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+De taal stond in het engels
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Ik was vergeten om in de head de taal aan te passen naar NL.
 
 
 #### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+DDe a states moeten nog uitgewerkt worden.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Ik was dit simpelweg vergeten.
 
 </details>
 
@@ -181,26 +159,21 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Mijn code is bijna af, maar nog erg rommelig. Door een eerder gesprek met een studentassistent  heb ik dan ook besloten om de website opnieuw op te bouwen zodat het overzichtelijker is. 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| student 1      |         
+| ---            |
+| responsive!!!  |
+| scroll position? |
+|                 |
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Je verwacht het niet, maar ik zat weer in mijn eentje in deze meeting. Ik heb het hier met Sanne gehad over hoe mijn website in elkaar zit. Het is nog steeds erg rommelig, maar we hebben der beide vertrouwen in dat het goedkomt. 
 
 </details>
 
@@ -214,7 +187,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vind zelf dat ik het redelijk goed heb gedaan, als ik er meer tijd voor had gehad was hij sowieso beter gehad, maar door een andere grote deadline kwam ik in de knoop met de tijd. Gelukkig kan ik dit ook zien als een leermoment. Ik moet in de toekomst beter plannen bijvoorbeeld. Ook is het handig om de breakdownschetsen er gewoon bij te houden. Want ik was eigenlijk alweer vergeten dat ik die had gemaakt en als ik ze nu naast mijn code houd zat ik er nog al naast met die schetsen.
 
 ### Screenshot(s)
 
@@ -233,8 +206,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. https://codetogo.io/how-to-listen-to-scroll-event-in-javascript/
+3. https://codepen.io/daveredfern/pen/zBGBJV
+
 
 </details>

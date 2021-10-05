@@ -3,6 +3,10 @@
     src:url('../fonts/GothamRounded-Light.otf') format('otf');
     src:url('../fonts/GothamRoundedBook_21018.ttf') format("ttf");
   }
+@font-face {
+    font-family: 'Gotham Rounded Bold';
+    src:url('../fonts/GothamRndSSm-Bold.woff') format('woff');
+}
 
 *, html{
     /*css reset*/
@@ -14,10 +18,12 @@
 :root {
     /*Achtergrond kleur variabele aanmaken*/ 
     --achtergrond: #ffce00;
+    --achtergrond2: #f294af;
     --overlooppaars: #896dae;
     --overloopgroen: #96cca9;
     --tekstcolor: black;
     --tekstblokcolor: white;
+
 }
 /* HEADER + HEADER RESPONSIVE */
 /*Semantische elementen*/
@@ -49,6 +55,9 @@ header nav {
     display: flex;
     flex-direction: column;
 }
+#navkeo{
+    background-color: var(--achtergrond2);
+}
 header nav ul {
     margin-left: 1.75em;
 } 
@@ -57,6 +66,14 @@ header nav ul li{
     margin-bottom: 1em;
     font-size: 24px;
     font-weight: 900;
+    list-style: none;
+}
+header nav ul li:hover::after {
+    content:"";
+    display:block;
+    height:2px;
+    background-color:black;
+    border-radius:1px;
 }
 header nav h2 {
     margin-top: 6em;
@@ -111,7 +128,7 @@ header nav ul::after {
     position: relative;
     z-index: 4;
 }
-li {
+#navlist {
     list-style: none;
     color: var(--tekstcolor);
 }
@@ -123,6 +140,12 @@ li:nth-of-type(6){
 }
 a {
     text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+a:visited{
+    color: var(--tekstcolor);
 }
 @media (min-width: 1024px){
     header {
@@ -176,30 +199,24 @@ header nav ul::after {
 main {
     margin-left: 2em;
 }
-@media(min-width: 1024px){
-    main{
-       margin-left: 4.5em;
-       display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-}
-main li:nth-of-type(1){
+#list1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) ,url("../images/zonnebloemen.png");
     background-size: cover;
 }
-main li:nth-of-type(2){
+#list2{
     background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) ,url("../images/zieligeman.png");
     background-size: cover;
+    word-wrap: break-word;
+        white-space: normal;
 }
-main li:nth-of-type(3){
+#list3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) ,url("../images/robertleegte.png");
     background-size: cover;
 }
-main li:nth-of-type(4){
+#list4{
     background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) ,url("../images/zelfportret.jpeg");
     background-size: cover;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 main section ul li {
     width: 100%;
@@ -214,36 +231,16 @@ main section ul li {
     display: flex;
     align-items: flex-end;
 }
-@media(min-width: 1024px){
-    main section ul li {
-        position: relative;
-        width: 400px;
-    }
-    main section ul{
-        display: flex;
-        margin-top: 8em;
-    }
-    footer{
-        margin-top: 8em;
-    }
-}
 h1 {
     font-size: 28px;
     margin-top: 4.75em;
     margin-bottom: 1.5em;
 }
-@media(min-width: 1024px){
-    h1{
-        display: block;
-        font-size: 52px;
-        max-width: 5em;
-        word-wrap: break-word;
-    }
-}
 main p{
     font-size: 16px;
     margin-bottom: 1.5em;
 }
+
 main h2{
     margin-top: 0.5em;
     color: var(--tekstblokcolor);
@@ -257,10 +254,10 @@ main h4 {
     color: var(--tekstblokcolor);
     font-size: 14px;
     margin-bottom: 1.25em;
+    font-family: "Gotham Rounded Bold";
 }
-main h4::after {
-    content: "➝";
-    margin-left: 1em;
+#linkpijl:hover{
+    margin-right: 2em;
 }
 main a{
     margin-left: 1em;
@@ -272,12 +269,72 @@ main section ul li a p{
 }
 #linkpijl {
     color: var(--tekstcolor);
+    font-family: "Gotham Rounded Bold";
+    margin-bottom: 2em;
 }
 #linkpijl::before {
     content: "➝";
     margin-right: 1em;
 }
+footer section {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-left: 2em;
+}
+footer h2 {
+    margin-bottom: 2em;
+}
+h5 {
+    font-size: 14px;
+    font-family: "Gotham Rounded Bold";
+}
 @media (min-width: 1024px){
+    main{
+        margin-left: 4.5em;
+        display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+     }
+    main section ul li {
+        position: relative;
+        width: 400px;
+    }
+    main section ul{
+        display: flex;
+        margin-top: 8em;
+    }
+    footer{
+        margin-top: 8em;
+    }
+    main li:nth-of-type(4){
+        margin-bottom: 2.75em;
+    }
+    h1{
+        display: block;
+        font-size: 56px;
+        max-width: 6em;
+        word-wrap: break-word;
+        white-space: normal;
+        margin-top: 2.5em;
+    }
+    main section:first-of-type{
+        width: 500px;
+    }
+    main p{
+        font-size: 16px;
+        max-width: 20em;
+        word-wrap: break-word;
+        white-space: normal;
+        margin-bottom: 1em;
+    }
+    footer h2{
+        display: block;
+        font-size: 32px;
+        max-width: 11em;
+        word-wrap: break-word;
+        white-space: normal;
+        margin-top: 2.5em;
+    }
     .scrollbaar {
         width: 100%;
         white-space: nowrap;
@@ -291,22 +348,20 @@ main section ul li a p{
         display: none;
     }
 }
-footer section {
-    margin-top: 2em;
-    margin-bottom: 4em;
-    margin-left: 2em;
+
+/* Enige css styling die nodig was voor kennisenonderzoek */
+#olist1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) ,url("../images/zelfportret.jpeg");
+    background-size: cover;
 }
-footer h2 {
-    margin-bottom: 2em;
+#olist2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) ,url("../images/schildermeneer.png");
+    background-size: cover;
 }
-@media (min-width: 1024px){
-    footer h2{
-        display: block;
-        font-size: 52px;
-        width: 13em;
-        overflow-wrap: break-word;
-    }
+#olist3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) ,url("../images/bibliotheek.png");
+    background-size: cover;
 }
-h5 {
-    font-size: 14px;
+#kennisbody{
+    background-color: var(--achtergrond2);
 }

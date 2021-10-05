@@ -1,8 +1,10 @@
 console.log("werkt ie?");
-
+// Hier haal ik de elementen op
 var navButton = document.getElementById("navicoon");
-var deHeader = document.querySelector("header");
+var deHeader = document.querySelector("header"); 
 
+// Ik heb maar 1 button nodig en op het makkelijker te maken verander ik de src van de img zodat hij daadwerkelijk veranderd
+// hier geef ik die button een taak
 navButton.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
@@ -18,14 +20,3 @@ function toggleMenu() {
 
 
 
-// $(document).ready(function(){       
-//     var scroll_pos = 0;
-//     $(document).scroll(function() {
-//         scroll_pos = $(this).scrollTop();
-//         if(scroll_pos > 300) {
-//             $("body").css('background-color', "var(--overlooppaars)");
-//         } else {
-//             $("body").css('background-color', 'var(--overloopgroen)');
-//         }
-//     });
-// });
