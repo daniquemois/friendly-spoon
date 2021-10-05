@@ -41,6 +41,7 @@ https://www.vangoghmuseum.nl/nl
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepage 
 <img src="images/website1.png" width="375px" alt="homepage">
+Ik was de screenshot die ik in het begin had gemaakt kwijt, dus inmiddels is er al een ander artikel als eerste... 
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Menu 
