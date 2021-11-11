@@ -73,6 +73,9 @@ header nav h2 {
     font-size: 28px;
     font-weight: normal;
 }
+a {
+    color: var(--tekstcolor);
+}
 header.toonMenu nav {
     transform: translatex(0%);
 }
