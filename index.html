@@ -1,124 +1,113 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Van Gogh</title>
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <title>Van Gogh Museum</title>
+    <link rel="stylesheet" href="styles/stylesshop.css" type="text/css">
 </head>
-<body>
-    
-    <header>
+
+<!-- Ik moest hier een id aan toevoegen omdat deze een andere achtergrond heeft -->
+<body id="indexbody"> 
+    <header id="indexheader">
+        <!-- Hieronder maak ik de header, bestaande uit de basic icoontjes. -->
         <a href="index.html" id="logoicoon"><img src="images/vangoghlogo.png" id="logoicoon" alt="logo icoon"></a>
 
         <a href="#" id="zoekicoon"><img src="images/searchicon.png" id="zoekicoon" alt="zoek icoon"></a>
-        
+
         <img src="images/menuicon.png" id="navicoon" alt="menu icoon">
-        
-        <nav>
+        <!-- Hier is de navbar, deze is pas zichtbaar na 1024px. -->
+        <nav id="navbar">
             <img src="images/crossicon.png" id="kruisicoon" alt="kruis icoon">
             <h2>Menu</h2>
             <span></span>
             <ul>
-                <li id="navlist">Home</li>
+                <a href="index.html">
+                    <li id="navlist">Museum</li>
+                </a>
                 <li id="navlist">Bezoek & Tickets</li>
-                <a href="kennisenonderzoek.html"><li id="navlist">Kunst & Verhalen</li></a>
-                <li id="navlist">Over</li>
-                <li id="navlist">Shop</li>
+                <a href="shop.html">
+                    <li id="navlist">Shop</li>
+                </a>
+                <a href="#"><li id="navlistacc">Mijn account</li></a>
                 <span></span>
-                <li id="navlist">NL/EN</li>
+                <a href="#"><li id="navlistlang">EN/ES/NL</li></a>
                 <img src="images/searchicon.png" id="zoekicoonlist" alt="zoek icoon">
             </ul>
         </nav>
     </header>
+    <!-- Ook de main heeft een andere styling dan de main van shop.html -->
+    <main id="mainindex">
+        <!-- Ik heb de main opgebouwd in secties, per secties heb je een "blok", dit maakt het later makkelijker om te flexen. -->
+        <section id="sectionindex1">
+            <h1>Ontdek het leven en werk van Vincent van Gogh</h1>
+            <h2 id="indexh2">Zie Van Gogh zelf! Museum bezoeken? Bestel je kaartje met starttijd online.</h2>
+            <a href="#">
+                <img src="images/pijl.png" class="pijl">
+                <p>Bestel tickets</p>
+            </a>
+            <a href="#">
+                <img src="images/pijl.png" class="pijl">
+                <p>Museum steunen? Doneer nu</p>
+            </a>
+        </section>
+        <!-- Sectie 2-5 zijn de afbeeldingen! -->
+        <section id="sectionindex2">
+            <h3 id="indexh3">Misser of meesterwerk?</h3>
+            <h4 id="indexh4">Tentoonstelling</h4>
+            <p id="indexp">Wat wilde Van Gogh bereiken met 'De aardappeleters' en is hij daarin geslaagd? Ontdek het in de tentoonstelling en vorm je eigen mening.</p>
+            <a href="#">
+                <p id="indexp">Lees snel verder</p>
+            </a>
+        </section>
 
-    <div class="scrollbaar">
-        <main>
-            <section>
-                <h1>Ontdek het leven en werk van Vincent van Gogh</h1>
-                <p>Het Van Gogh Museum is weer open! Bestel je kaartje met starttijd online.</p>
-            
-                 
-                <a href="">
-                     <p id="linkpijl">Bestel tickets</p>
-                </a>
-         
-                <a href=""> 
-                     <p id="linkpijl">Museum steunen? Doneer nu</p>
-                </a>
-            </section>
-         
-             <section>
-                 <ul>
-                     <li id="list1">
-                         <a href="">
-                            <h3>Vaste collectie</h3>
-                            <h2>Van Goghs meesterwerken</h2>
-                            <p>De schilderijen van Vincent van Gogh zijn wereldberoemd. Bezoek de vaste collectie en laat je meevoeren in zijn ontwikkeling als kunstenaar.</p>      
-                            <h4>Bekijk meer</h4>
-                        </a>
-                     </li>
-    
-                     <li id="list2">
-                        <a href="">
-                            <h3>Nieuws</h3>
-                            <h2>Ontdekking: nieuw werk van Vincent van Gogh</h2>
-                            <p>Onderzoekers van het museum hebben een vroege tekening van Van Gogh ontdekt.</p>
-                            <h4>Meer weten</h4>
-                        </a>
-                     </li>
-         
-                     <li id="list3">
-                        <a href="">
-                            <h3>Van Gogh inspireert</h3>
-                            <h2>Jan Robert Leegte</h2>
-                            <p>De landschappen van Van Gogh en de impressionisten vormen de inspiratie voor de serie 'Compressed Landscapes' van Jan Robert Leegte (1973).</p>
-                            <h4>Lees verder</h4>
-                         </a>
-                     </li>
-         
-                     <li id="list4">
-                         <a href="">
-                            <h3>Alles over Van Gogh</h3>
-                            <h2>Vincent van Gogh</h2>
-                            <p>Maak kennis met leven en werk van Vincent van Gogh: bekijk zijn schilderijen en tekeningen, lees zijn brieven en meer.</p>
-                            <h4>Ontdek meer</h4>
-          
-                         </a>
-                     </li>
-                 </ul>
-            </section>
-         
-         </main>
-         
-         <footer>
-            <section>
-                <h2>Ontdek meer over het museum en Vincent van Gogh:</h2>
-                <a href="">
-                    <p id="linkpijl">Ontdek de collectie</p>
-                </a>
-        
-                <a href=""> 
-                    <p id="linkpijl">Steun het museum. Doneer nu</p>
-                </a>
-    
-                <a href=""> 
-                    <p id="linkpijl">Blijft op de hoogte. Schrijf je in voor onze nieuwsbrief</p>
-                </a>
-            </section>
-    
-            <section>
-                <h5 id="sponsors">Onze hoofdsponsors:</h5>
-                <img src="images/sponsors.png" id="sponsors" alt="alle sponsors">
-            </section>
-    
-         </footer>
-    
-        </div>
+        <section id="sectionindex3">
+            <h3 id="indexh3">De aardappeleters voor families</h3>
+            <p id="indexp">Voor families is er van alles te doen bij de tentoonstelling: workshops, speurtochten en meer!</p>
+            <a href="#">
+                <p id="indexp">Ontdek meer!</p>
+            </a>
+        </section>
 
+        <section id="sectionindex4">
+            <h3 id="indexh3">Van Goghs meesterwerken</h3>
+            <h4 id="indexh4">Vaste collectie</h4>
+            <p id="indexp">De schilderijen van Vincent van Gogh zijn wereldberoemd. Bezoek de vaste collectie en laat je meevoeren in zijn ontwikkeling als kunstenaar.</p>
+            <a href="#">
+                <p id="indexp">Bekijk meer</p>
+            </a>
+        </section>
 
+        <section id="sectionindex5">
+            <h3 id="indexh3">Vincent van Gogh</h3>
+            <h4 id="indexh4">Alles over Van Gogh</h4>
+            <p id="indexp">Maak kennis met leven en werk van Vincent van Gogh: bekijk zijn schilderijen en tekeningen, lees zijn brieven en meer.</p>
+            <a href="#">
+                <p id="indexp">Ontdek meer</p>
+            </a>
+        </section>
+        <!-- Dit is de laatste sectie -->
+        <section id="sectionindex6">
+            <h3 id="indexh32">Ontdek meer over het museum en Vincent van Gogh:</h3>
+            <a href="#">
+                <img src="images/pijl.png" class="pijl">
+                <p>Ontdek de collectie</p>
+            </a>
+            <a href="#">
+                <img src="images/pijl.png" class="pijl">
+                <p>Steun het museum. Doneer nu</p>
+            </a>
+            <a href="#">
+                <img src="images/pijl.png" class="pijl">
+                <p>Blijf op de hoogte. Schrijf je in voor onze nieuwsbrief</p>
+            </a>
+            <p>Onze hoofdsponsors:</p>
+            <img src="images/sponso.png" id="sponsor" alt="sponsoren">
+        </section>
+    </main>
+    <!-- Er is op deze pagina geen sprake van een footer -->
     <script src="js/javascript.js"></script>
-
-    
 </body>
+
 </html>
