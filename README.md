@@ -44,7 +44,7 @@ Homepage
 Ik was de screenshot die ik in het begin had gemaakt kwijt, dus inmiddels is er al een ander artikel als eerste... 
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Menu 
+Shop 
 <img src="images/website2.png" width="375px" alt="kennis en onderzoek pagina">
  
 </details>
@@ -78,7 +78,7 @@ Menu
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-Ik begon best wel goed, en was erg enthousiast. De website die ik heb gekozen leek mij erg leuk om te doen, omdat hij erg simpel lijkt. Dit viel uiteindelijk toch wel tegen.
+Ik begon best wel goed en was erg enthousiast. De website die ik heb gekozen leek mij erg leuk om te doen, dit omdat ik sinds ik weet dat Van Gogh ooit bestaan heeft, ik fan ben van hem. Daarnaast leek de website mij niet al te moeilijk, dit vond ik belangrijk omdat ik voor het eerst een responsive website zou maken.
 
 
 ### Agenda voor meeting
@@ -189,6 +189,8 @@ Je verwacht het niet, maar ik zat weer in mijn eentje in deze meeting. Ik heb he
 
 ### Stand van zaken
 Ik vind zelf dat ik het redelijk goed heb gedaan, als ik er meer tijd voor had gehad was hij sowieso beter gehad, maar door een andere grote deadline kwam ik in de knoop met de tijd. Gelukkig kan ik dit ook zien als een leermoment. Ik moet in de toekomst beter plannen bijvoorbeeld. Ook is het handig om de breakdownschetsen er gewoon bij te houden. Want ik was eigenlijk alweer vergeten dat ik die had gemaakt en als ik ze nu naast mijn code houd zat ik er nog al naast met die schetsen.
+
+We zijn weer een aantal weken verder en ik heb alles opnieuw gemaakt. Ik had het erg druk de afgelopen weken en eigenlijk stelde ik FED ook heel erg uit. Ik zat er echt tegen op om die shop te maken, omdat hij me heel moeilijk leek. Uiteindelijk ben ik er toch maar "gewoon" aan begonnen. Ik kwam erachter dat met simpel nadenken je erg ver komt en voor mij is dit dan ook het hoogst haalbare op het moment.
 
 ### Screenshot(s)
 
